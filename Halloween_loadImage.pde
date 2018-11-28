@@ -1,3 +1,7 @@
+PImage waifu;
+PImage punch;
+PImage sans;
+
 void setup()
 {
   size(1000,1000);
@@ -17,4 +21,7 @@ image(waifu,mouseX,mouseY);
 image(punch,mouseX-150,mouseY);
 image(sans,95,97);
 ellipse(200,200,300,300);
+String s = "Tanks I guess.";
+fill(50);
+text(s, 10, 10, 70, 80);
 }
