@@ -1,24 +1,22 @@
 //Click and Drag your cursor to "carve" the pumpkins
 
-PImage img;
+PImage waifu;
+PImage punch;
 
-void setup() {
-  size(800, 500);
-  img = loadImage("pumpkins.png");
-  image(img, 0, 0);
-}
-
-void draw() 
+void setup()
 {
-  save("YOURNAME.Halloween.png");
+  size(1000,1000);
+  smooth();
+  frameRate(60);
+  waifu=loadImage("Declan.jpg");
+  punch=loadImage("kappa.jpg");
 }
-
-void mouseDragged()
-{
-  //"Carves" the pumpkins
-  //blendMode optional, might be problematic with a light or white background
-  blendMode(OVERLAY); 
+void draw() {
+  background(255);
+  
   noStroke();
-  fill(255, 200, 25);
-  ellipse(mouseX, mouseY, 5, 5);
+  fill(255,100,0,30);
+image(waifu,mouseX,mouseY);
+image(punch,mouseX-150,mouseY);
+ellipse(200,200,300,300);
 }
