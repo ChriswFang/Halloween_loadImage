@@ -23,5 +23,5 @@ image(sans,95,97);
 ellipse(200,200,300,300);
 String s = "Tanks I guess.";
 fill(50);
-text(s, 150, 100, 70, 80);
+text(s, 500, 500, 70, 80);
 }
